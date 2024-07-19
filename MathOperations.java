@@ -11,9 +11,7 @@ public class MathOperations {
     public void add(double x,double y){
         System.out.println(x+y);
     }
-    public void add(float x,float y){
-        System.out.println(x+y);
-    }
+
 
     public void subtract(int a,int b){
         System.out.println(a-b);
@@ -23,9 +21,7 @@ public class MathOperations {
         System.out.println(a-b);
     }
 
-    public void subtract(float a,float b){
-        System.out.println(a-b);
-    }
+
 
     public void multiply(int n,int m){
         System.out.println(n*m);
@@ -35,9 +31,7 @@ public class MathOperations {
         System.out.println(n*m);
     }
 
-    public void multiply(float n,float m){
-        System.out.println(n*m);
-    }
+
 
     public void divide(int i,int j){
         if(j!=0)
@@ -53,32 +47,22 @@ public class MathOperations {
             System.out.println("Error, Cant divide by zero");
     }
 
-    public void divide(float i,float j){
-        if(j!=0)
-            System.out.println(i/j);
-        else
-            System.out.println("Error, Cant divide by zero");
-    }
 
-    public void remainder(int p,int q){
-        if(q!=0)
-            System.out.println(p%q);
-        else
-            System.out.println("Error, Cant divide by zero");
-    }
 
-    public void remainder(double p,double q){
-        if(q!=0)
-            System.out.println(p%q);
-        else
-            System.out.println("Error, Cant divide by zero");
-    }
 
-    public void remainder(float p,float q){
-        if(q!=0)
-            System.out.println(p%q);
-        else
-            System.out.println("Error, Cant divide by zero");
-    }
 
+    public static void main(String[] args) {
+        MathOperations m1=new MathOperations();
+        m1.add(1,2);
+        m1.add(19.7,6.0);
+
+        m1.subtract(4,2);
+        m1.subtract(4.5,7.2);
+
+        m1.multiply(2,7);
+        m1.multiply(5.7,9.8);
+
+        m1.divide(6,3);
+        m1.divide(7.0,3.0);
+    }
 }
